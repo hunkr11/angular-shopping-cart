@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-5">
+    <!--  (productSelected) custom event in ProductListComponent 
+      selectedProduct ==> property in product component
+    $event is a fixed name for any event transmitted by the event emitter
+    -->
+    <sc-product-list (productSelected) ="selectedProduct = $event"  ></sc-product-list>
+  </div>
+  <div class="col-md-7">
+    <sc-product-detail [selectededProduct]="selectedProduct"></sc-product-detail>
+  </div>
+</div>
+
+    

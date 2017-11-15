@@ -1,0 +1,19 @@
+<div >
+  <div class="col-xs-12">
+    <a class="btn btn-success">New Product</a>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <!-- Bound property product
+        since we already set as @Input() product for product-item
+        so assigning the product item here from the product-list.
+        caz we have initiated 1 object in the product-list
+        [product] ==>  @Input() product
+        "product" ==>   product = new Product('Dummy','Dummy','https://i1.adis.ws/i/canon/canon-products-cameras-990x430?qlt=70&w=1200');
+        -->
+        <sc-product-item *ngFor="let product of products" [product]="product" (click) = "onSelectProduct(product)"></sc-product-item>
+      </ul>
+    </div>
+  </div>
+</div>
