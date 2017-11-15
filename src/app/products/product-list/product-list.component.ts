@@ -5,6 +5,7 @@ import { ProductService } from '../product.service';
   selector: 'sc-product-list',
   templateUrl: './product-list.component.html'
 })
+
 export class ProductListComponent implements OnInit {
   // outside from the product-list component. 
   // here we list all the products, while clicking on the list we show that product in the product-list component.
